@@ -19,7 +19,9 @@ body {
     height: 100vh;
 
 }
-
+.notch2{
+    display: none;
+}
 .notch {
     position: absolute;
     top: 39.8%;
@@ -57,6 +59,9 @@ body {
     box-shadow: 0 4px 50px 2px #7229D9;
 
 
+}
+.screen4{
+    display: none;
 }
 
 .screen1 {
@@ -164,7 +169,7 @@ body {
 .notch{
     margin-top:1.2%;
     margin-left: -9%;
-    
+    display: block;
 }
 
 .button{
@@ -177,13 +182,21 @@ body {
 }
 
 /*iphone+ 6/7/8 */
-@media (min-width: 414px) and (max-width: 736px) {
+@media (min-width: 414px) and (max-width: 736px){
 .notch{
-    margin-top: 3%;
-    margin-left: -8%;
-    
+    position: absolute;
+    top: 40.8% !important;
+    left: 48%;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 15px;
+    width: 100px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: block !important;
 }
-
+.notch2{
+    display: none !important;
+}
 .button{
     margin-left: 18%;
 }
@@ -198,8 +211,8 @@ body {
 @media (min-width: 415px) and (max-width: 538px) { 
 
     .notch{
-        margin-top: 10.3%;
-        
+        margin-top: 9.3%;
+        display: block;
     }
 
     .button{
@@ -217,7 +230,7 @@ body {
 .notch{
    margin-top: 5.4%;
    margin-left: -2.4%;
-   
+   display: block;
 }
 .button{
     margin-top: 5%;
@@ -235,9 +248,9 @@ body {
 /*surface duo*/
 @media (min-width: 540px) and (max-width: 720px) {
 .notch{
-    margin-top: 2%;
-    margin-left: -5.2%;
-    
+    margin-top: 0.8%;
+    margin-left: -6.7%;
+    display: block;
 }
 .button{
     margin-top: 3%;
@@ -252,7 +265,7 @@ body {
     .notch{
     margin-top: 0.4%;
     margin-left: -9.6%;
-    
+    display: block;
     }
 
     .button{
@@ -265,7 +278,7 @@ body {
     .notch{
        margin-top: -1.8%;
        margin-left: -11.5%;
-       
+       display: block;
     }
     .button{
         margin-top: 5%;
@@ -276,21 +289,35 @@ body {
         margin-top: 3%;
     }
 }
-@media (min-width: 1024px) and (max-width: 2400px){
-    .notch{
-       margin-top: 7.6%;
-       margin-left: -1.2%;
-       
-    }
-    .button{
-        margin-left: 2.6%;
-    }
 
-    .screen3{
-        margin-top: -11.8%;
-    }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px)  and (-webkit-min-device-pixel-ratio: 3) { 
+.notch{
+    display: none;
 }
-
-
-
-
+.screen3{
+    display: none;
+}
+.notch2{
+    position: absolute;
+    top: 42.3%;
+    left: 37.5%;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 15px;
+    width: 100px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: block;
+}
+.screen4{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    position: absolute;
+    top: 63%;
+    font-size: 13px;
+    display: block;
+}
+}
