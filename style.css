@@ -164,7 +164,7 @@ body {
 .notch{
     margin-top:1.2%;
     margin-left: -9%;
-    display: block;
+    
 }
 
 .button{
@@ -181,7 +181,7 @@ body {
 .notch{
     margin-top: 3%;
     margin-left: -8%;
-    display: block;
+    
 }
 
 .button{
@@ -199,7 +199,7 @@ body {
 
     .notch{
         margin-top: 10.3%;
-        display: block;
+        
     }
 
     .button{
@@ -217,7 +217,7 @@ body {
 .notch{
    margin-top: 5.4%;
    margin-left: -2.4%;
-   display: block;
+   
 }
 .button{
     margin-top: 5%;
@@ -237,7 +237,7 @@ body {
 .notch{
     margin-top: 2%;
     margin-left: -5.2%;
-    display: block;
+    
 }
 .button{
     margin-top: 3%;
@@ -252,7 +252,7 @@ body {
     .notch{
     margin-top: 0.4%;
     margin-left: -9.6%;
-    display: block;
+    
     }
 
     .button{
@@ -265,7 +265,7 @@ body {
     .notch{
        margin-top: -1.8%;
        margin-left: -11.5%;
-       display: block;
+       
     }
     .button{
         margin-top: 5%;
@@ -276,3 +276,21 @@ body {
         margin-top: 3%;
     }
 }
+@media (min-width: 1024px) and (max-width: 2400px){
+    .notch{
+       margin-top: 7.6%;
+       margin-left: -1.2%;
+       
+    }
+    .button{
+        margin-left: 2.6%;
+    }
+
+    .screen3{
+        margin-top: -11.8%;
+    }
+}
+
+
+
+
